@@ -1,0 +1,42 @@
+
+Reliability analysis   
+Call: alpha(x = attitude_of_blood_donation[, c("Q7", "Q8", "Q9", "Q10", 
+    "Q11", "Q12", "Q13")], check.keys = TRUE)
+
+  raw_alpha std.alpha G6(smc) average_r S/N   ase mean   sd median_r
+      0.51      0.51    0.59      0.13   1 0.097 0.65 0.19     0.12
+
+    95% confidence boundaries 
+         lower alpha upper
+Feldt     0.29  0.51  0.68
+Duhachek  0.32  0.51  0.70
+
+ Reliability if an item is dropped:
+     raw_alpha std.alpha G6(smc) average_r  S/N alpha se var.r med.r
+Q7        0.53      0.55    0.61      0.17 1.22    0.096 0.040 0.149
+Q8        0.42      0.40    0.45      0.10 0.67    0.115 0.033 0.079
+Q9-       0.46      0.45    0.50      0.12 0.81    0.107 0.038 0.149
+Q10-      0.39      0.40    0.49      0.10 0.67    0.124 0.040 0.079
+Q11       0.47      0.47    0.53      0.13 0.89    0.106 0.034 0.116
+Q12       0.53      0.54    0.58      0.16 1.17    0.094 0.034 0.154
+Q13       0.47      0.47    0.54      0.13 0.88    0.103 0.043 0.101
+
+ Item statistics 
+      n raw.r std.r r.cor r.drop mean   sd
+Q7   58  0.31  0.34  0.11  0.083 0.90 0.31
+Q8   58  0.58  0.63  0.60  0.430 0.93 0.26
+Q9-  58  0.54  0.55  0.47  0.268 0.81 0.40
+Q10- 58  0.67  0.63  0.56  0.404 0.74 0.44
+Q11  58  0.54  0.51  0.40  0.258 0.79 0.41
+Q12  58  0.34  0.36  0.18  0.090 0.12 0.33
+Q13  58  0.54  0.51  0.38  0.246 0.24 0.43
+
+Non missing response frequency for each item
+       0    1 miss
+Q7  0.10 0.90    0
+Q8  0.07 0.93    0
+Q9  0.81 0.19    0
+Q10 0.74 0.26    0
+Q11 0.21 0.79    0
+Q12 0.88 0.12    0
+Q13 0.76 0.24    0
