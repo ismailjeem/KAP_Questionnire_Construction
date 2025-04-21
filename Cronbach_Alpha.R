@@ -84,16 +84,31 @@ sink("result/cronbach_alpha_full_output.txt")
 print(alpha_result)
 sink()
 
+# Extract the alpha if item is dropped table
+alpha_dropped <- alpha_result$alpha.drop
+
+# Export it to CSV in 'table' folder
+write.csv(alpha_dropped, "table/cronbach_alpha_if_item_dropped.csv", row.names = TRUE)
+
+alpha(attitude_of_blood_donation[,c("Q7","Q8","Q9","Q10","Q11","Q12","Q13")],
+      check.keys = TRUE)
+
+# Run alpha analysis and store the result
+alpha_result_attitude_of_blodd_donation <- alpha(attitude_of_blood_donation[,c("Q7","Q8","Q9","Q10","Q11","Q12","Q13")],
+                                                 check.keys = TRUE)
 
 
 
+sink("result/cronbach_alpha_full_output_attitude_of-blood_donation.txt")
+print(alpha_result_attitude_of_blodd_donation)
+sink()
 
 
+# Extract the alpha if item is dropped table
+alpha_dropped_attitude_of_blodd_donatio <- alpha_result_attitude_of_blodd_donation$alpha.drop
 
-
-
-
-
+# Export it to CSV in 'table' folder
+write.csv(alpha_dropped_attitude_of_blodd_donatio, "table/cronbach_alpha_if_item_dropped_attitude_of_blodd_donatio.csv", row.names = TRUE)
 
 
 
